@@ -66,7 +66,7 @@ const ProjectSection = () => {
      <ProjectTag onClick={handleTagChange}
     name="Full Stack" active={tag}></ProjectTag>
     </div>
-    <div className='grid md:grid-cols-3 gap-8 md:gap-12'>{filterProjects.map((project)=>
+    <div className='grid md:grid-cols-2 lg:grid-cols-3  gap-8 md:gap-12'>{filterProjects.map((project)=>
     <ProjectCard key={project.id}
         title={project.title}
         description={project.description}

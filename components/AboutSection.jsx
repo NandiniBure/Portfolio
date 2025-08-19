@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "skills",
     id: "skills",
     content: (
-      <ul className="list-disk gap-10  flex pr-2">
+      <ul className="list-disk gap-10  grid sm:grid-cols-4 grid-cols-2  pr-2">
         <div>
           {" "}
           <li>Java</li>
@@ -112,11 +112,11 @@ export const AboutSection = () => {
 
   return (
     <section id="about" className=" text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 xl:gap-16 px-4 sm:py-16 xl:px-16">
+      <div className="md:grid lg:grid-cols-2 gap-8 items-center py-8 xl:gap-16 px-4 sm:py-16 xl:px-16">
         <Image src="/about-image.png" width={500} height={500} />
         <div className=" mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className=" text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className=" text-base md:text-lg">
+          <h2 className=" text-2xl sm:text-4xl font-bold text-white mb-4">About Me</h2>
+          <p className="  text-sm md:text-lg">
             About Me I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
